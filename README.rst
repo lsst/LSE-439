@@ -3,9 +3,9 @@
 .. image:: https://github.com/lsst/lse-439/workflows/CI/badge.svg
    :target: https://github.com/lsst/lse-439/actions/
 
-############################
-LSST Science Validation Plan
-############################
+##############################################
+Rubin Observatory LSST Science Validation Plan
+##############################################
 
 LSE-439
 =======
