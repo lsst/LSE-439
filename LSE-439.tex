@@ -1,0 +1,67 @@
+\documentclass[DM,lsstdraft,toc]{lsstdoc}
+% lsstdoc documentation: https://lsst-texmf.lsst.io/lsstdoc.html
+\input{meta}
+
+% Package imports go here.
+
+% Local commands go here.
+
+%If you want glossaries
+%\input{aglossary.tex}
+%\makeglossaries
+
+\title{LSST Science Validation Plan}
+
+% Optional subtitle
+% \setDocSubtitle{A subtitle}
+
+\author{%
+Leanne Guy, Keith Bechtol, Jeff Carlin, Chris Walter, Michael Wood-Vasey,....OTHER CONTRIBUTORS
+}	
+
+\setDocRef{LSE-439}
+\setDocUpstreamLocation{\url{https://github.com/lsst/lse-439}}
+
+\date{\vcsDate}
+
+% Optional: name of the document's curator
+\setDocCurator{Leanne Guy}
+\setDocAbstract{%
+This is the LSST Science ValidationPlan. We define the goals, scope and timelines for LSST Science Validation. 
+}
+
+% Change history defined here.
+% Order: oldest first.
+% Fields: VERSION, DATE, DESCRIPTION, OWNER NAME.
+% See LPM-51 for version number policy.`
+\setDocChangeRecord{%
+  \addtohist{1}{2019-06-27}{First Draft}{Leanne Guy}
+}
+
+\begin{document}
+
+% Create the title page.
+\maketitle
+% Frequently for a technote we do not want a title page  uncomment this to remove the title page and changelog.
+% use \mkshorttitle to remove the extra pages
+
+% ADD CONTENT HERE
+% You can also use the \input command to include several content files.
+\input{introduction}
+\input{approach}
+
+\appendix
+% Include all the relevant bib files.
+% https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
+\section{References} \label{sec:bib}
+\renewcommand{\refname}{} % Suppress default Bibliography section
+\bibliography{local,lsst,lsst-dm,refs_ads,refs,books}
+
+% Make sure lsst-texmf/bin/generateAcronyms.py is in your path
+\section{Acronyms} \label{sec:acronyms}
+\input{acronyms.tex}
+% If you want glossary uncomment below -- comment out the two lines above
+%\printglossaries
+
+\end{document}
+

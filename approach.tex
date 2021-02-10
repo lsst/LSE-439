@@ -1,9 +1,72 @@
 \section{Approach} \label{sec:approach}
 
-This document describes the approach adopted for scientifically validating the \gls{LSST} data products and services. 
+This document describes the approach adopted for scientifically validating the  LSST data products and services. 
 
-The \gls{LSST} Science Requirements  are described in \citeds{LPM-17}.
+The  LSST Science Requirements  are described in \citeds{LPM-17}.
 
+
+LSST Science Validation is a global validation of all the LSST Data Products and Services. Traversal across all data products and services.  it employs an 'external view' in that the process looks at the final data products from the eyes of an end science users. Validation is not done on data products stored in intermediate data formats such as FITS files, nor is validation carried out using independent scripts or command line bespoke tools or unpublished fields,  but rather using the LSST Science Platform , the scalable , etc ... LSST end user interface to the LSST archive, using only and all the published data. 
+
+LSST science  validation is in a sense the last line of defence to find and either correct or document issues, features with the LSST data release before going public. There will typically only be a short period of time during which to run science validation, a few months before delivery 
+
+\subsection{Proposed high-level schedule}
+
+Map in a proposed schedule with the pre-operations DPs and how we would use this to ramp up 
+
+
+Examples of validation activities involving the community (reference the LDM-503 document and the goal to include the community) that might be planned out as hack weeks
+photo-z Hack Week .  -- testing the various algorithms for photo-z to include values in teh catalogue .
+Define a hack week vs a sprint.
+
+
+Examples of validation activities involving the community (reference the LDM-503 document and the goal to include the community) that might be planned out as sprints 
+Several very specific goals, e.g validation of the astrometry, uncertainties and correlations, Catalogue completeness, etc. Themed with a validation goal. 
+
+\section{Motivation}
+
+What is the motivation for this work. The motivation is to provide a independent scientific validation of the final data products and services with a view of  the science that they can enable, and not to whether they meet requirements as outlined in the SRD. This activity will provide a global view and validation of the integrated system, building on top of the individual  component  - and to feedback. resolve if strange features are found
+
+\subsection{}
+Assessment of the statistical properties of the catalogue, goal is to provide guidelines to the community in using the data, avoid misinterpretations. 
+
+\subsection{Documentation}
+Validation results will contribute to the documentation of a Data Release/Preview
+
+
+\subsection{LSST Science Guidelines}
+This section should cover what contributors, commissioning, community can do with the early access they get via a Project sanctioned activity, e.g publications, sharing. It will oobviously go hand-in-hand with the data rights policy
 
 \subsection{Pass/fail criteria}
 \label{sec:passfail}
+
+
+\section{Methods Tools, environment}
+
+Validation should be done, where possible using an Automated integrated environment, ad-hoc exploration and data requests, notebooks, 
+
+\section{Feedback}
+
+Do/can we modify, reprocess and make an updated release? What is the process? 
+
+Do we delay the release to reprocess?
+
+Do we omit certain results and defer to a later release ? What would be the criteria to decide this? How bad does a problem need to be
+
+Do we release and add the known issues to the documentation?
+
+\section{Validation Organization}
+
+\subsection{Science theme}
+e.g Astrometry, photometry, variables, solar system, etc 	
+
+
+\subsection{Methods}
+Internal: Using LSST data only
+
+External catalogues: Using crossmatch catalogues for comparison, independent measurements can provide an independent validation, where possible (depth, pointing, etc)
+
+Can  models help to explain observed features to determine whether they are features or artefacts?
+
+Statistical methods / multidimensional analysis 
+
+	
