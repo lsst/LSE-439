@@ -1,3 +1,7 @@
+DMTN-049.pdf
+DMTN049_timeline.key
+
+DMTR-21.pdf
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
@@ -10,11 +14,9 @@
 *.fot
 *.cb
 *.cb2
-.*.lb
 
 ## Intermediate documents:
 *.dvi
-*.xdv
 *-converted-to.*
 # these rules might exclude image files for figures etc.
 # *.ps
@@ -110,14 +112,6 @@ acs-*.bib
 *.gaux
 *.gtex
 
-# htlatex
-*.4ct
-*.4tc
-*.idv
-*.lg
-*.trc
-*.xref
-
 # hyperref
 *.brf
 
@@ -153,9 +147,7 @@ _minted*
 *.mw
 
 # nomencl
-*.nlg
 *.nlo
-*.nls
 
 # pax
 *.pax
@@ -198,9 +190,6 @@ pythontex-files-*/
 # easy-todo
 *.lod
 
-# xmpincl
-*.xmpi
-
 # xindy
 *.xdy
 
@@ -229,14 +218,7 @@ TSWLatexianTemp*
 *~[0-9]*
 
 # auto folder when using emacs and auctex
-./auto/*
-*.el
+/auto/*
 
 # expex forward references with \gathertags
 *-tags.tex
-
-# standalone packages
-*.sta
-
-# generated if using elsarticle.cls
-*.spl
